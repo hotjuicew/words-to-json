@@ -9,46 +9,55 @@ def SearchWords(Word):
         HttpHeaders = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0'}
         Response = requests.get(url, headers=HttpHeaders)
         soup = BeautifulSoup(Response.text, 'html.parser')
-        # print("soup",soup)
-        # Parse the response to extract phonetic symbols
-        PhoneticSymbolUK, PhoneticSymbolUS = RegularFind(soup)
-        print(PhoneticSymbolUK,PhoneticSymbolUS)
-        return PhoneticSymbolUK, PhoneticSymbolUS
+
+        meanings, PhoneticSymbolUK, PhoneticSymbolUS = RegularFind(soup)
+        return meanings, PhoneticSymbolUK, PhoneticSymbolUS
     
     except Exception as e:
-        print('Search Words Error!')
-        return None, None
+        print('出错了',e)
+        return None, None, None
 
 def RegularFind(soup):
-    # Find all span elements with class 'phonetic'
-    phonetic_spans = soup.find_all('span', class_='phonetic')
+    meanings=[]
+    meaningsLi = soup.find_all('li', class_='word-exp')
+    if len(meaningsLi) >= 0:
+    # 只处理meanings中的前三个元素
+        for li in meaningsLi[:2]:
+            text_parts = [span.get_text() for span in li.find_all('span')]
+            combined_text = ''.join(text_parts)
+            print("combined_text",combined_text)
+            meanings.append(combined_text)
+    else:
+        meanings=["没找到释义"]
 
+    phonetic_spans = soup.find_all('span', class_='phonetic')
     if len(phonetic_spans) >= 2:
-        # The first div is for UK pronunciation, and the second div is for US pronunciation
         PhoneticSymbolUK = phonetic_spans[0].get_text().strip(' /')
         PhoneticSymbolUS = phonetic_spans[1].get_text().strip(' /')
     else:
         PhoneticSymbolUK = 'NoPhoneticSymbolUK'
         PhoneticSymbolUS = 'NoPhoneticSymbolUS'
 
-    return PhoneticSymbolUK, PhoneticSymbolUS
+    return meanings, PhoneticSymbolUK, PhoneticSymbolUS
 
 if __name__ == '__main__':
-    # Load the original JSON data
-    with open('original_data.json', 'r', encoding='utf-8') as f:
+
+    with open('output.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
 
     num=1
     for item in data:
         Word = item['name']
+        print("Word",Word)
         num=num+1
         print(num+1)
-        PhoneticSymbolUK, PhoneticSymbolUS = SearchWords(Word)
+        meanings, PhoneticSymbolUK, PhoneticSymbolUS = SearchWords(Word)
+        print("meanings",meanings)
+        item['trans'] = meanings
         item['ukphone'] = PhoneticSymbolUK
         item['usphone'] = PhoneticSymbolUS
 
 
-    # Save the updated JSON data to a new file
     with open('new_data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 

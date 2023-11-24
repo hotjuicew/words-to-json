@@ -8,18 +8,15 @@ result = []
 
 # 逐行处理文本
 for line in lines:
-    line = line.strip()  # 去掉行尾的换行符和空白
-    if not line:
+    word = line.strip()  # 去掉行尾的换行符和空白
+    if not word:
         continue  # 跳过空行
-
-    parts = line.split(' ')
-    word = parts[0]
-    meanings = '，'.join(parts[1:])
+    # 每行只有一个单词
 
     # 添加到结果列表
     result.append({
         "name": word,
-        "trans": [meanings],
+        "trans": "",
         "usphone": "",
         "ukphone": ""
     })
