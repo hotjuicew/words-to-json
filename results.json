@@ -1,0 +1,169 @@
+[
+    {
+        "name": "fertiliser",
+        "trans": [
+            "n.化肥（fertilizer 的英式拼写）"
+        ],
+        "usphone": "ˈfɜːrtəlaɪzər",
+        "ukphone": "ˈfɜːtəlaɪzə(r)"
+    },
+    {
+        "name": "chemical",
+        "trans": [
+            "adj.化学的，与化学有关的",
+            "n.化学品，化学制品；成瘾的药物"
+        ],
+        "usphone": "ˈkemɪk(ə)l",
+        "ukphone": "ˈkemɪk(ə)l"
+    },
+    {
+        "name": "toxic",
+        "trans": [
+            "adj.有毒的，引起中毒的；令人极不愉快的，极其有害的，恶毒的；中毒的，中毒性的；（财政）（债务）有毒的，风险高的；（证券）有毒的",
+            "n.有毒物质，毒药（toxics）"
+        ],
+        "usphone": "ˈtɑːksɪk",
+        "ukphone": "ˈtɒksɪk"
+    },
+    {
+        "name": "unnatural",
+        "trans": [
+            "adj.不自然的；反常的；不近人情的"
+        ],
+        "usphone": "ʌnˈnætʃrəl",
+        "ukphone": "ʌnˈnætʃrəl"
+    },
+    {
+        "name": "that",
+        "trans": [
+            "det.那，那个；那种",
+            "pron.那，那个；那，那种；（非正式）就那样"
+        ],
+        "usphone": "ðæt",
+        "ukphone": "ðæt"
+    },
+    {
+        "name": "pron",
+        "trans": [
+            "abbr.代名词的（pronominal）；代词（pronoun）；显著的（pronounced）；发音（pronunciation）",
+            "n.（Pron）人名；（捷）普龙"
+        ],
+        "usphone": "prɒn",
+        "ukphone": "prəʊn"
+    },
+    {
+        "name": "this",
+        "trans": [
+            "pron.这，这个；这样；今，本；……的这个；有个",
+            "adj.这，这个（离说话人较近的）"
+        ],
+        "usphone": "ðɪs",
+        "ukphone": "ðɪs"
+    },
+    {
+        "name": "they",
+        "trans": [
+            "pron.他们；它们；她们"
+        ],
+        "usphone": "ðeɪ",
+        "ukphone": "ðeɪ"
+    },
+    {
+        "name": "those",
+        "trans": [
+            "det.那些（that 的复数）",
+            "pron.那些（that 的复数）"
+        ],
+        "usphone": "ðoʊz",
+        "ukphone": "ðəʊz"
+    },
+    {
+        "name": "these",
+        "trans": [
+            "det.这些（this 的复数）",
+            "pron.这些（this 的复数）"
+        ],
+        "usphone": "ðiːz",
+        "ukphone": "ðiːz"
+    },
+    {
+        "name": "such",
+        "trans": [
+            "det.如此的，这等的；如此（……以致）；这种的，那样的",
+            "pron.这种人（或事物），这类的；（上文提到的）那样的情况，那件事"
+        ],
+        "usphone": "sʌtʃ",
+        "ukphone": "sʌtʃ"
+    },
+    {
+        "name": "conj",
+        "trans": [
+            "n.连接词；连词（等于 conjunction）"
+        ],
+        "usphone": "ˈkəndʒ",
+        "ukphone": "ˈkəndʒ"
+    },
+    {
+        "name": "well",
+        "trans": [
+            "adv.顺利地，令人满意地；熟练地，技术好地；妥善地，恰当地；赞扬地，赞许地；有益地，有利地；容易地；友善地；有充分理由，合理地；很，非常；富裕地，舒适地；完全地，充分地；大大地，远远地；（程度或标准）多少，怎样",
+            "adj.健康的；令人满意的；明智的，可取的"
+        ],
+        "usphone": "wel",
+        "ukphone": "wel"
+    },
+    {
+        "name": "both",
+        "trans": [
+            "det.双方，两者",
+            "pron.两者"
+        ],
+        "usphone": "boʊθ",
+        "ukphone": "bəʊθ"
+    },
+    {
+        "name": "not",
+        "trans": [
+            "adv.表示否定，不",
+            "n.“非”（计算机中逻辑运算的一种）"
+        ],
+        "usphone": "nɑːt",
+        "ukphone": "nɒt"
+    },
+    {
+        "name": "only",
+        "trans": [
+            "adv.只，只有；仅在……情况下（或地方等）；只是，不过（表示不重要、不严重等）；（强调数量少或时间段）仅仅，才；不早于，直到……才；（除此之外别无可为）只能；（用于说明事情的恶果）只会；不料，竟然；只能（希望或愿望等）；（强调行动恰当）完全，真正；刚刚（强调某事刚发生）；险些没，差点没",
+            "adj.仅有的，唯一的；最好的，最适合的；独生的"
+        ],
+        "usphone": "ˈoʊnli",
+        "ukphone": "ˈəʊnli"
+    },
+    {
+        "name": "but",
+        "trans": [
+            "conj.而，相反；（用于表示歉意）但是；可是（用来提出异议）；除了；（与重复词连用，表示强调）",
+            "prep.除了，除……外"
+        ],
+        "usphone": "bʌt; bət",
+        "ukphone": "bʌt; bət"
+    },
+    {
+        "name": "also",
+        "trans": [
+            "adv.此外，而且；也，同样",
+            "conj.另外，又"
+        ],
+        "usphone": "ˈɔːlsoʊ",
+        "ukphone": "ˈɔːlsəʊ"
+    },
+    {
+        "name": "other",
+        "trans": [
+            "adj.（表示与已知的人或事物不同）别的，另外的；（表示在与已知的人或事物同一类中）别的，另外的；（两个中）另一的；（一组人或事物中）其余的；（用于列举之后）其他的；对面的，相反方向的；（泛指）别（人）的，他（人）的；最近的，前不久的",
+            "pron.（表示与已知的人或事物不同）另外；（表示在与已知的人或事物同一类中）另外；（两个中）另一个（the other）；其余的人（或事物）（the others）；（用于列举之后）其他；对面，相反方向（the other）；<非正式>性交（the other）"
+        ],
+        "usphone": "ˈʌðər",
+        "ukphone": "ˈʌðə(r)"
+    }
+]
